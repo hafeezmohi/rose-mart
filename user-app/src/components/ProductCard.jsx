@@ -8,7 +8,7 @@ export default function ProductCard({ product, width = wp(42) }) {
   const navigation = useNavigation();
   const { cartItems, addToCart, increaseQty, decreaseQty } = useContext(CartContext);
   
-  const cartItem = cartItems.find((i) => i.id === product._id);
+  const cartItem = cartItems.find((i) => i.id === (product.id || product._id));
   const inCart = !!cartItem;
 
   return (
