@@ -36,7 +36,7 @@ export default function ProductCard({ product, width = wp(42) }) {
           style={{ width: "100%", height: hp(15), backgroundColor: "#f9f9f9" }}
           resizeMode="contain"
         />
-        {product.discount && (
+        {product.discount > 0 && (
           <View
             style={{
               position: "absolute",

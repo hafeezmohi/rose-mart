@@ -243,7 +243,7 @@ export default function ProductScreen({ route, navigation }) {
           }}
         >
           {/* DISCOUNT */}
-          {discount && (
+          {discount > 0 && (
             <View
               style={{
                 position: "absolute",
